@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Presto Pulse - Login</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Navbar Area -->
+        <div class="oneMusic-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="oneMusicNav">
+
+                        <!-- Nav brand -->
+                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li ><a href="index.html" id="a">Home</a></li>
+                                    <li ><a href="piano.html" id="b">Virtual Piano</a></li>
+                                    
+                                    <li><a href="orchestra.html" id="c">Orchestra</a></li>
+                                    <li><a href="instrument.html" id="d">Instruments</a></li>
+                                    <li><a href="contact.html" id="e">Contact</a></li>
+                                </ul>
+
+                                <!-- Login/Register & Cart Button -->
+                                <div class="login-register-cart-button d-flex align-items-center">
+                                    <!-- Login/Register -->
+                                    <div class="login-register-btn mr-50">
+                                        <a href="login.html" id="loginBtn">Login / Register</a>
+                                    </div>
+
+                                    <!-- Cart Button -->
+                                    <div class="cart-btn">
+                                        <p><img class="language" src="img/bg-img/arabic.png" alt="" onclick = "switchLang()"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Nav End -->
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Breadcumb Area Start ##### -->
+    <section class="breadcumb-area bg-img bg-overlay" style="background-image: url(img/bg-img/breadcumb3.jpg);">
+        <div class="bradcumbContent">
+            <p id="f">Hello there</p>
+            <h2 id="g">Login</h2>
+        </div>
+    </section>
+    <!-- ##### Breadcumb Area End ##### -->
+
+    <!-- ##### Login Area Start ##### -->
+    <section class="login-area section-padding-100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <div class="login-content">
+                        <h3 id="h">Welcome Back</h3>
+                        <!-- Login Form -->
+                        <div class="login-form">
+                            <form action="#" method="post">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1" id="i">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter E-mail">
+                                    <small id="emailHelp" class="form-text text-muted"><i class="fa fa-lock mr-2"></i>We'll never share your email with anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1" id="j">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                                <button type="submit" class="btn oneMusic-btn mt-30" id="k">Login</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Login Area End ##### -->
+
+    <!-- ##### Footer Area Start ##### -->
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row d-flex flex-wrap align-items-center">
+                <div class="col-12 col-md-6">
+                    <a href="#"><img src="img/core-img/logo.png" alt=""></a>
+                   
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="footer-nav">
+                        <ul>
+                            <li><a href="index.html" id="a1">Home</a></li>
+                            <li><a href="piano.html" id="b1">Virtaul Piano</a></li>
+                            <li><a href="orchestra.html" id="c1">Orchestra</a></li>
+                            <li><a href="instrument.html" id="d1">Instruments</a></li>
+                            <li><a href="contact.html" id="e1">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+
+    <script>
+        let languageContent = {
+            "en": {
+                "a": "Home",
+                "b": "Virtual Piano",
+                "c": "Orchestra",
+                "d": "Instrument",
+                "e": "Contact",
+                "a1": "Home",
+                "b1": "Virtual Piano",
+                "c1": "Orchestra",
+                "d1": "Instrument",
+                "e1": "Contact",
+                "loginBtn": "Login/Register",
+                "f":"Hello there",
+                "g":"Login",
+                "h":"Welcome back",
+                "i":"email",
+                "j":"password",
+                "k":"Login"
+               
+            },
+            "fr": {
+                "a": "المنزل",
+                "b": "بيانو افتراضي",
+                "c": "اوركسترا",
+                "d": "الالات",
+                "e": "التواصل",
+                "a1": "المنزل",
+                "b1": "بيانو افتراضي",
+                "c1": "اوركسترا",
+                "d1": "الالات",
+                "e1": "التواصل",
+                "loginBtn": "التسجيل",
+                "f":"مرحبا",
+                "g":"تسجيل الدخول",
+                "h":"مرحبا مجددا",
+                "i":"البريد الالكتروني",
+                "j":"كلمة المرور",
+                "k":"تسجيل الدخول",
+               
+            }
+        };
+    
+        let currentLang = "en"; // Set the default language
+    
+        function switchLang() {
+            currentLang = currentLang === "en" ? "fr" : "en"; // Toggle between English and French
+            for (let key in languageContent[currentLang]) {
+                document.getElementById(key).innerHTML = languageContent[currentLang][key];
+            }
+            // To change the letter spacing for id=c because in Arabic we can't have letter spacing (it will look wrong)
+            let elementC = document.getElementById('g');
+            if (elementC) {
+                if (currentLang === "fr") {
+                    elementC.style.letterSpacing = "0";
+                } else {
+                    elementC.style.letterSpacing = "10px";
+                }
+            }
+            let elements2 = document.getElementById('s2');
+            if (elements2) {
+                if (currentLang === "fr") {
+                    elements2.style.letterSpacing = "0";
+                } else {
+                    elements2.style.letterSpacing = "10px";
+                }
+            }
+            
+        }
+    </script>
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+</body>
+
+</html>

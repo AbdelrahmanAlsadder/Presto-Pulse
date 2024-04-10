@@ -1,0 +1,410 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Presto Pulse - Virtual Piano</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/merge/bootstrap.min.css">
+    <link rel="stylesheet" href="css/merge/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/merge/magnific-popup.css">
+    <link rel="stylesheet" href="css/merge/font-awesome.min.css">
+    <link rel="stylesheet" href="css/merge/themify-icons.css">
+    <link rel="stylesheet" href="css/merge/nice-select.css">
+    <link rel="stylesheet" href="css/merge/audioplayer.css">
+    <link rel="stylesheet" href="css/merge/flaticon.css">
+    <link rel="stylesheet" href="css/merge/gijgo.css">
+    <link rel="stylesheet" href="css/merge/animate.css">
+    <link rel="stylesheet" href="css/merge/slick.css">
+    <link rel="stylesheet" href="css/merge/slicknav.css">
+    <link rel="stylesheet" href="css/merge/style.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    <style>
+        
+        .piano {
+          display: flex;
+          justify-content: center;
+          margin-top: 50px;
+          margin-bottom: 100px;
+        }
+        .key {
+          width: 50px;
+          height: 200px;
+          background-color: #f0f0f0;
+          border: 1px solid #dcdcdc;
+          position: relative;
+          margin: 0 5px;
+          border-radius: 5px;
+        }
+        .key.black {
+          width: 30px;
+          height: 130px;
+          background-color: #333;
+          z-index: 1;
+          border-radius: 5px;
+        }
+        .note {
+          display: none;
+        }
+        .key.active {
+      background-color: #ccc;
+    }
+      </style>
+</head>
+
+<body>
+   
+
+    
+
+   <!-- Preloader -->
+   <div class="preloader d-flex align-items-center justify-content-center">
+    <div class="lds-ellipsis">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+
+<!-- ##### Header Area Start ##### -->
+<header class="header-area">
+    <!-- Navbar Area -->
+    <div class="oneMusic-main-menu">
+        <div class="classy-nav-container breakpoint-off">
+            <div class="container">
+                <!-- Menu -->
+                <nav class="classy-navbar justify-content-between" id="oneMusicNav">
+
+                    <!-- Nav brand -->
+                    <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+
+                    <!-- Navbar Toggler -->
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="classy-menu">
+
+                        <!-- Close Button -->
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+
+                        <!-- Nav Start -->
+                        <div class="classynav">
+                            <ul>
+                                <li ><a href="index.html" id="a">Home</a></li>
+                                <li ><a href="piano.html" id="b">Virtual Piano</a></li>
+                                
+                                <li><a href="orchestra.html" id="c">Orchestra</a></li>
+                                <li><a href="instrument.html" id="d">Instruments</a></li>
+                                <li><a href="contact.html" id="e">Contact</a></li>
+                            </ul>
+
+                            <!-- Login/Register & Cart Button -->
+                            <div class="login-register-cart-button d-flex align-items-center">
+                                <!-- Login/Register -->
+                                <div class="login-register-btn mr-50">
+                                    <a href="login.html" id="loginBtn">Login / Register</a>
+                                </div>
+
+                                <!-- Cart Button -->
+                                <div class="cart-btn">
+                                    <p><img class="language" src="img/bg-img/arabic.png" alt="" onclick = "switchLang()"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Nav End -->
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- ##### Header Area End ##### -->
+
+<!-- ##### Breadcumb Area Start ##### -->
+<section class="breadcumb-area bg-img bg-overlay" style="background-image: url(img/bg-img/a1.jpg); filter: brightness(2.2);">
+    <div class="bradcumbContent">
+        <p id="n" style="filter: brightness(0);">Who's The Pianist?</p>
+        <h2>HoiMei</h2>
+    </div>
+</section>
+<!-- ##### Breadcumb Area End ##### -->
+
+
+    <!-- about_area  -->
+    <div class="about_area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-5 col-md-6">
+                    <div class="about_thumb">
+                        <video width="400" controls>
+                            <source src="img/bg-img/recorded.mp4" type="video/mp4">
+                            
+                            Your browser does not support HTML video.
+                          </video>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-md-6">
+                    <div class="about_info">
+                        <h3 >Chopin Scherzo NO 2</h3>
+                        <p id="v2">Chopin's Scherzo No. 2 in B-flat minor, Op. 31, composed in 1837, is a striking example of his innovative approach to the scherzo form, characterized by its turbulent emotions and virtuosic piano writing. This piece exemplifies Chopin's ability to infuse traditional forms with his unique voice, earning it a place among the most beloved and challenging works in the piano repertoire</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <div class="piano">
+        <div class="key white" data-note="C" ></div>
+        <div class="key black" data-note="CS"></div>
+        <div class="key white" data-note="D"></div>
+        <div class="key black" data-note="DS"></div>
+        <div class="key white" data-note="E"></div>
+        <div class="key white" data-note="F"></div>
+        <div class="key black" data-note="FS"></div>
+        <div class="key white" data-note="G"></div>
+        <div class="key black" data-note="GS"></div>
+        <div class="key white" data-note="A"></div>
+        <div class="key black" data-note="AS"></div>
+        <div class="key white" data-note="B"></div>
+      </div>
+    
+ 
+
+
+
+
+
+
+
+
+
+
+
+   <!-- ##### Footer Area Start ##### -->
+   <footer class="footer-area">
+    <div class="container">
+        <div class="row d-flex flex-wrap align-items-center">
+            <div class="col-12 col-md-6">
+                <a href="#"><img src="img/core-img/logo.png" alt=""></a>
+               
+            </div>
+
+            <div class="col-12 col-md-6">
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="index.html" id="a1">Home</a></li>
+                        <li><a href="piano.html" id="b1">Virtaul Piano</a></li>
+                        <li><a href="orchestra.html" id="c1">Orchestra</a></li>
+                        <li><a href="instrument.html" id="d1">Instruments</a></li>
+                        <li><a href="contact.html" id="e1">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</footer>
+<!-- ##### Footer Area Start ##### -->
+
+   
+<script>
+    const keys = document.querySelectorAll('.key');
+    const audioMap = {};
+
+    keys.forEach(key => {
+      const note = key.dataset.note;
+      const audio = new Audio(`audio\\piano-88-notes\\4-${note.toLowerCase()}.wav`);
+      audioMap[note] = audio;
+    });
+
+    keys.forEach(key => {
+      key.addEventListener('mousedown', () => {
+        key.classList.add('active');
+        playNoteByKey(key);
+      });
+      key.addEventListener('mouseup', () => {
+        key.classList.remove('active');
+      });
+      key.addEventListener('mouseleave', () => {
+        key.classList.remove('active');
+      });
+    });
+
+    function playNoteByKey(key) {
+      const note = key.dataset.note;
+      const audio = audioMap[note];
+      if (audio) {
+        audio.currentTime = 0;
+        audio.play();
+      }
+    }
+
+    document.addEventListener('keydown', (event) => {
+      const key = event.key.toUpperCase();
+      const pianoKeys = ['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', ';', "'", '\\'];
+      const index = pianoKeys.indexOf(key);
+      if (index !== -1) {
+        playNoteByKey(keys[index]);
+        keys[index].classList.add('active');
+      }
+    });
+
+    document.addEventListener('keyup', (event) => {
+      const key = event.key.toUpperCase();
+      const pianoKeys = ['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', ';', "'", '\\'];
+      const index = pianoKeys.indexOf(key);
+      if (index !== -1) {
+        keys[index].classList.remove('active');
+      }
+    });
+  </script>
+
+<script>
+    let languageContent = {
+        "en": {
+            "a": "Home",
+            "b": "Virtual Piano",
+            "c": "Orchestra",
+            "d": "Instrument",
+            "e": "Contact",
+            "a1": "Home",
+            "b1": "Virtual Piano",
+            "c1": "Orchestra",
+            "d1": "Instrument",
+            "e1": "Contact",
+            "loginBtn": "Login/Register",
+            "v2":"Chopin's Scherzo No. 2 in B-flat minor, Op. 31, composed in 1837, is a striking example of his innovative approach to the scherzo form, characterized by its turbulent emotions and virtuosic piano writing. This piece exemplifies Chopin's ability to infuse traditional forms with his unique voice, earning it a place among the most beloved and challenging works in the piano repertoire",
+            "n":"Who's The Pianist?",
+            
+           
+        },
+        "fr": {
+            "a": "المنزل",
+            "b": "بيانو افتراضي",
+            "c": "اوركسترا",
+            "d": "الالات",
+            "e": "التواصل",
+            "a1": "المنزل",
+            "b1": "بيانو افتراضي",
+            "c1": "اوركسترا",
+            "d1": "الالات",
+            "e1": "التواصل",
+            "loginBtn": "التسجيل",
+            "v2":"تم تأليفها عام 1837، وهو مثال صارخ على نهجه المبتكر في شكل الشيرزو، الذي يتميز بمشاعره المضطربة وكتابته الرائعة على البيانو. تجسد هذه المقطوعة قدرة شوبان على إضفاء الأشكال التقليدية بصوته الفريد، مما أكسبها مكانًا بين أكثر الأعمال المحبوبة والصعبة في مجموعة البيانو.",
+            "n":"من هي عازفة البيانو؟",
+           
+        }
+    };
+
+    let currentLang = "en"; // Set the default language
+
+    function switchLang() {
+        currentLang = currentLang === "en" ? "fr" : "en"; // Toggle between English and French
+        for (let key in languageContent[currentLang]) {
+            document.getElementById(key).innerHTML = languageContent[currentLang][key];
+        }
+        // To change the letter spacing for id=c because in Arabic we can't have letter spacing (it will look wrong)
+        let elementC = document.getElementById('g');
+        if (elementC) {
+            if (currentLang === "fr") {
+                elementC.style.letterSpacing = "0";
+            } else {
+                elementC.style.letterSpacing = "10px";
+            }
+        }
+        let elements2 = document.getElementById('s2');
+        if (elements2) {
+            if (currentLang === "fr") {
+                elements2.style.letterSpacing = "0";
+            } else {
+                elements2.style.letterSpacing = "10px";
+            }
+        }
+        
+    }
+</script>
+
+
+
+
+
+
+
+
+
+    <!-- link that opens popup -->
+
+    <!-- JS here -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+            crossorigin="anonymous">
+    </script>
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/audioplayer.js"></script>
+    <script src="js/scrollIt.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/gijgo.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <!--contact js-->
+    <script src="js/contact.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+
+    <script src="js/main.js"></script>
+    
+		<script>
+                $(function() {
+                    $('audio').audioPlayer({
+
+                    });
+                });
+            </script>
+            <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+</body>
+
+</html>
