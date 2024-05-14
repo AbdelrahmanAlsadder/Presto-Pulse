@@ -167,7 +167,7 @@
 
                         <!-- Single Album -->
                         <div class="single-album">
-                            <img src="img/bg-img/brahms_double_concerto.jpeg" alt="">
+                            <img src="img/bg-img/grayscale.jpeg" alt="">
                             <div class="album-info">
                                 <a href="https://www.gramophone.co.uk/review/brahms-double-concerto-viotti-violin-concerto-dvorak-silent-woods" target="_blank">
                                     <h5 id="alb2">Brahms Double Concerto </h5>
@@ -245,7 +245,7 @@
             <div class="row align-items-end">
                 <div class="col-12 col-md-5 col-lg-4">
                     <div class="featured-artist-thumb">
-                        <img src="img/bg-img/swanlake.jpg" alt="">
+                        <img src="img/bg-img/swanlakemono.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-12 col-md-7 col-lg-8">
@@ -383,7 +383,7 @@
                                 <div class="thumbnail">
                                     <img src="img/bg-img/dich.png" alt="">
                                 </div>
-                                <div class="content-">
+                                <div class="content-" >
                                     <h6>Erbarme <br> dich</h6>
                                     <p>Bach</p>
                                 </div>
@@ -404,7 +404,7 @@
                                     <p>Vivaldi</p>
                                 </div>
                             </div>
-                            <audio preload="auto" controls>
+                            <audio preload="auto" controls >
                                 <source src="audio/Vivaldi - Vedrò con mio diletto (Jakub Józef Orliński).mp3">
                             </audio>
                         </div>
@@ -439,6 +439,7 @@
                             <audio preload="auto" controls>
                                 <source src="audio/Antonio Vivaldi_ Cantate _Cessate, omai cessate_ - _ Ah, ch'infelice sempre.mp3">
                             </audio>
+                            
                         </div>
 
                         <!-- Single Top Item -->
@@ -738,6 +739,26 @@
             }
         }
     </script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var audioElements = document.querySelectorAll("audio");
+       
+
+        audioElements.forEach(function(audio) {
+            audio.addEventListener("play", function() {
+                // Pause all other audio elements
+                audioElements.forEach(function(otherAudio) {
+                    if (otherAudio !== audio && !otherAudio.paused) {
+                        otherAudio.pause();
+                    }
+                });
+            });
+        });
+    });
+</script>
+
+
+
     
    
     <!-- jQuery-2.2.4 js -->
